@@ -18,7 +18,7 @@ class AccountsMethod:
         commonObjects = CommonObjects(self.page)
         accountPage = AccountPage(self.page)
         commonObjects.button("Add record").click()
-        commonMethods.select_option_from_dropdown("Legal form",data["legal_form"])
+        commonObjects.drop_down("Legal form").select_option(data["legal_form"])
         commonMethods.enter_text_in_input_box("Account name",data["first_name"])
         commonMethods.enter_text_in_input_box("Short name",data["short_name"])
         commonObjects.button("Save").click()

@@ -6,4 +6,4 @@ class AccountPage:
         self.page = page
 
     def created_account_bread_crumb(self,first_name:str)->Locator:
-        return self.page.locator("//li[contains(@class,'breadcrumb') and text()='"+first_name+"']'")
+        return self.page.locator("//li[contains(@class,'breadcrumb') and text()='"+first_name+"']")

@@ -18,7 +18,7 @@ class CommonMethods:
 
     def select_option_from_dropdown(self,dropdown_name:str,dropdown_option:str):
         commonObjects = CommonObjects(self.page)
-        commonObjects.drop_down("Legal form").click()
+        commonObjects.drop_down(dropdown_name).click()
         commonObjects.drop_down_option(dropdown_option).click()
 
     def enter_text_in_input_box(self,name:str,value:str):

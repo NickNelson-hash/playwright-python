@@ -8,7 +8,7 @@ from methods.HomeMethods import HomeMethods
 def test_create_account(yetiforce_page:Page):
     data = dict(
         first_name="Nickson Nelson",
-        short_name="Nickson",
+        short_name="Nickson12",
         legal_form="Private individual"
     )
 
