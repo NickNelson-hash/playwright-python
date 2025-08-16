@@ -11,3 +11,6 @@ class HomePage:
 
     def left_navigation_menu(self,name:str)->Locator:
         return self.page.locator("//span[contains(@class,'menu__item') and @title='"+name+"']")
+
+    def expanded_left_navigation_menu(self,name:str)->Locator:
+        return self.page.locator("//span[@title='"+name+"']")
